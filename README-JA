@@ -1,0 +1,28 @@
+python-whitespace
+
+これはPythonで書かれたWhitespaceのインタプリタです。
+Python2.7及びPython3.3で動くと思います。
+
+使い方:
+    単体のインタプリタとして:
+        $ python whitespace.py <Whitespaceのプログラムファイル>
+    プログラムに組み込むとき:
+        1. Whitespaceのプログラムを命令とラベルのリストに変換する
+            compiled_program = compile_whitespace(program_str)
+        2. 変換したプログラムデータを実行する
+            output = run_whitespace(compiled_program,input)
+
+注意:
+    - このプログラムには、バグ、仕様の読解ミス、
+      またはその他の不都合が含まれている可能性があります。
+    - 公式インタプリタと違い、「数値読み込み」命令はC言語でいうと
+      scanf("%d",&input)のような動作をします。
+      すなわち、このインタプリタでは1行に複数の空白区切りの整数を書いても
+      読み込めます。
+
+リンク:
+    Whitespace
+        http://compsoc.dur.ac.uk/whitespace/index.php
+
+ライセンス:
+    このプログラムはThe zlib/libpng Licenseでライセンスされています。

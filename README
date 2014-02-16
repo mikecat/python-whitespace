@@ -1,0 +1,28 @@
+python-whitespace
+
+This is Whitespace interpreter written in Python.
+It seems to work with Python 2.7 and Python 3.3
+
+How to use:
+    as a standalone interpreter:
+        $ python whitespace.py <Whitespace program file>
+    as a component:
+        1. Translate Whitespace program into a list of commands and labels
+            compiled_program = compile_whitespace(program_str)
+        2. Execute the translated program data
+            output = run_whitespace(compiled_program,input)
+
+Notice:
+    - This software may contain bugs, misinpremention of the specification
+      or other faults.
+    - Unlike the original interpreter, the "read a number" function
+      works like scanf("%d",&input) in C language.
+      It means that we can input multiple integers separated by spaces
+      in one line when using this interpreter.
+
+Links:
+    Whitespace
+        http://compsoc.dur.ac.uk/whitespace/index.php
+
+License:
+    This program is licensed under The zlib/libpng License.
